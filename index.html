@@ -32,6 +32,16 @@
             </div>
             <div class="card-group">
                     <div class="card" style="width: 18rem;" v-for="item in col.collection.items">
+                        <div class="card-body" v-for="peli in item.data">
+                            <dl>
+                                <dt class="card-title">
+                                    {{peli.promt}}
+                                </dt>
+                                <dd>
+                                    {{peli.value}}
+                                </dd>
+                            </dl>
+                        </div>
                     </div> 
                 </div>    
 
